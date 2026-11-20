@@ -68,3 +68,13 @@ SELECT
   COUNT(*) 
 FROM incidents
 GROUP BY is_shooting;
+
+--11. What is the busiest and least busiest day?
+WITH busiest_day AS (
+  SELECT day_of_week, COUNT(*) AS busiest_day
+  FROM incidents
+  GROUP BY day_of_week
+  Order BY COUNT(*) DESC
+)
+SELECT *
+FROM busiest_day;
