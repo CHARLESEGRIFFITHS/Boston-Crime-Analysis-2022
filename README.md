@@ -23,7 +23,7 @@ District B2 recorded the most (10,031), then D4 (9,592) and C11 (9,136). The bus
 Midnight was the busiest hour (5,704 incidents); 4am was the quietest (767). INVESTIGATE PERSON incidents peaked on Friday (1,288) and were lowest on Sunday (975).
 
 **Shootings**
-733 incidents in 2022 involved a shooting.
+733 incidents in 2022 involved a shooting and 73,119 didn't involve a shooting 
 
 ## How to run it
 
@@ -47,4 +47,4 @@ sqlite> .read analysis.sql
 
 ## Skills
 
-SQL (SQLite) · `SELECT` · `WHERE` · `GROUP BY` · `HAVING` · `ORDER BY` · `COUNT`
+SQL (SQLite) · `SELECT` · `WHERE` · `GROUP BY` · `HAVING` · `ORDER BY` · `COUNT` · `CASE WHEN`
