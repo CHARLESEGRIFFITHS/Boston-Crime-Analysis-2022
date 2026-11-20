@@ -64,3 +64,10 @@ LIMIT 5;
 
 -- 11. How many incidents involved a shooting?
 SELECT COUNT(*) FROM incidents WHERE shooting = 1;
+
+--13. How many incidents involved a shooting — and how many did not?
+SELECT 
+  CASE WHEN shooting = 0 THEN 0 ELSE 1 END AS is_shooting,
+  COUNT(*) 
+FROM incidents
+GROUP BY is_shooting;
